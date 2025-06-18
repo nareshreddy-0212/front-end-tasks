@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Formatting Tasks</title>
+</head>
+<body>
+
+<!-- Task 1–15 -->
+<p>My favorite movie is <b>Maharshi</b>. The main theme of the <i>movie Maharshi revolves around a successful businessman</i> film directed by <u>Vamshi Paidipally</u>.</p>
+<p><strong>This movie has a very complex plot</strong>, and <em>you must pay attention</em> to understand it.</p>
+<p>Einstein's famous formula: E = mc<sup>2</sup></p>
+<p>Glucose chemical formula: C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
+<p>The <mark>dream</mark> concept in the movie is very important.</p>
+<small>*This description is for educational purposes only.</small>
+<p>Price: <del>$20.00</del> <ins>$15.00</ins></p>
+<p><abbr title="World Wide Web">WWW</abbr> and <abbr title="HyperText Markup Language">HTML</abbr> are basic web terms.</p>
+<blockquote>"Dreams feel real while we're in them."<cite> - Christopher Nolan</cite></blockquote>
+<code>&lt;p&gt;Hello World&lt;/p&gt;</code>
+<pre>
+The sun sets low, the sky turns red,
+Soft clouds gather overhead.
+Evening whispers in the trees,
+Carried gently by the breeze.
+</pre>
+<p>This is a <b>bold</b>, <i>italic</i>, <u>underlined</u>, <strong>strong</strong>, <em>emphasized</em>, and <mark>highlighted</mark> sentence.</p>
+<p>My project is called <code>Student Portal</code>. Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your work.</p>
+<p><abbr title="Cascading Style Sheets">CSS</abbr> helps design beautiful web pages.</p>
+<p><del>How to Travel the World</del> <ins>Top 10 Travel Tips</ins></p>
+
+<!-- Task 16–22 -->
+<p>This is the first paragraph.</p>
+<p>This is the second paragraph.<br>Point 1<br>Point 2<br>Point 3</p>
+<p>Roses are red,<br>Violets are blue,<br>Sugar is sweet,<br>And so are you.</p>
+<p>Paragraph before the line.</p>
+<hr>
+<p>Paragraph after the line.</p>
+<p>I&nbsp;&nbsp;love&nbsp;&nbsp;spaced&nbsp;&nbsp;text.</p>
+<!-- This is a comment -->
+<!-- <h1>This is a heading</h1> -->
+<!-- <p>This paragraph is commented out</p> -->
+<p>I am learning HTML.<br><br><br>I enjoy formatting tasks.<br><br><br>Practice makes perfect.</p>
+
+<!-- Task 23–30 -->
+<small><b>Terms and Conditions:</b> Please <u>read carefully</u>. By using this site, you agree to our <em>rules</em>.</small>
+<p><strong>This book is amazing!</strong> The story is deep.<del> I didn’t like the ending.</del> <mark>Great character development</mark>.</p>
+<pre><code>
+function greet() {
+  console.log("Hello, World!");
+}
+</code></pre>
+<p>Buy this amazing product today! <em>Limited time offer!</em> <strong>Hurry now!</strong></p>
+<p><del>Office closed for renovation</del> <ins>Office now open</ins></p>
+<p>This is a <b>bold</b> and <i>italic</i> and <u>underlined</u> text with <strong>strong</strong>, <em>emphasized</em>, and <mark>highlighted</mark> features.</p>
+<blockquote>“This service changed my life!”<cite> – A Happy User</cite></blockquote>
+<h1>My First Blog</h1>
+<h2>Introduction</h2>
+<p>This blog is about learning HTML formatting.</p>
+<h2>Why Learn HTML?</h2>
+<p><strong>HTML is the foundation</strong> of all web pages. <em>Start learning today!</em></p>
+
+</body>
+</html>
