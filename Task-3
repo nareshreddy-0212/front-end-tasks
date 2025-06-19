@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My First Webpage</title>
+</head>
+<body>
+  <!--  1–5: Introduction -->
+  <h1>Welcome to My First Webpage</h1>
+  <p>Hello! My name is Naresh Reddy. I am passionate about web development and love learning new technologies.</p>
+
+  <!--  6–10: HTML Tags -->
+  <hr>
+  <h2>About Me</h2>
+  <p>I am a student.<br>I enjoy coding and designing webpages.</p>
+  <b>I love HTML!</b>
+  <hr>
+
+  <!--  11–15: Attributes -->
+  <h2 title="This is a tooltip for my heading">HTML Attributes Example</h2>
+  <a href="https://www.google.com" target="_blank" style="color: green;">Visit Google</a><br>
+  <img src="google.jpeg" alt="Placeholder Image" width="150" height="150">
+
+  <!--  16–18: Headings & Paragraphs -->
+  <h1>Content Structure</h1>
+  <h2>My Journey</h2>
+  <p>I started learning HTML recently and I enjoy it a lot.</p>
+  <h3>Skills</h3>
+  <p>I know basic HTML, CSS, and JavaScript.</p>
+
+  <!--  19–22: Formatting -->
+  <p>This is <b>bold</b>, <i>italic</i>, and <u>underlined</u> text.</p>
+  <p>This is <strong>important</strong> and <em>emphasized</em> content.</p>
+  <p>This is <mark>highlighted text</mark> using the mark tag.</p>
+  <p>Chemical formula for water: H<sub>2</sub>O <br>Einstein's formula: E = mc<sup>2</sup></p>
+
+  <!-- 23–25: Links -->
+  <a href="https://www.wikipedia.org" target="_blank" title="Wikipedia">Go to Wikipedia</a><br>
+  <a href="mailto:nareshkumarreddy0212@gmail.com">Send me an Email</a><br>
+  <a href="tel:+916300584273">Call Me</a><br>
+  <a href="#about">Jump to About Me</a>
+
+  <!-- 26–27: Images -->
+  <h2>Sample Image</h2>
+  <img src="download.jpeg" alt="Sample Image" width="300"><br>
+  <a href="https://www.frontend developer.com">
+    <img src="C:\Users\think\OneDrive\Documents\Intership\frontend developer.png" alt="favorite
+     developer" width="300">
+  </a>
+
+  <!--  28–30: Lists -->
+  <h2>My Top 5 Favorite Books</h2>
+  <ol>
+    <li>Maharshi</li>
+    <li>Discrete Mathematics</li>
+
+    <li>Ramayanam</li>
+    <li>Atomic Habits</li>
+    <li>Rich Dad Poor Dad</li>
+  </ol>
+
+  <h2>My Daily Tasks</h2>
+  <ul>
+    <li>Wake up early</li>
+    <li>Exercise</li>
+    <li>Study HTML</li>
+    <li>Practice coding</li>
+    <li>Sleep well</li>
+  </ul>
+
+  <h2>Programming Terms</h2>
+  <dl>
+    <dt>HTML</dt>
+    <dd>HyperText Markup Language, used to create webpages.</dd>
+    <dt>CSS</dt>
+    <dd>Cascading Style Sheets, used for styling HTML.</dd>
+    <dt>JavaScript</dt>
+    <dd>Programming language used for interactive webpages.</dd>
+  </dl>
+
+</body>
+</html>
