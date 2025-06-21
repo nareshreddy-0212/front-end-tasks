@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Practice Tasks</title>
+</head>
+<body>
+
+<!-- 1–5: HTML Attributes -->
+ <h1>This is Task-5 web page</h1>
+<p style="color: green; font-size: 18px;">This is a styled paragraph.</p>
+
+<img src="nat.jpeg" title="This is a lion!" alt="Nature Image" width="200"><br><br>
+
+<a href="https://example.com" rel="nofollow">No Follow</a><br>
+<a href="https://example.com" rel="noopener">No Opener</a><br>
+<a href="https://example.com" rel="noreferrer">No Referrer</a><br><br>
+
+<b><a href="tel:+916300584273">Call Me: +91 6300584273</a></b><br><br>
+
+<img src="nature.jpeg" alt="Cat Image" style="border-radius: 15px;" width="200"><br><br>
+
+<!-- 6–10: Headings and Paragraphs -->
+<h1>Student Report</h1>
+<h2>Subjects</h2>
+<h3>Maths</h3>
+<p>Maths helps in developing logical thinking and problem-solving skills.</p>
+<h3>Science</h3>
+<p>Science is about understanding the world through experiments and observation.</p>
+
+<article>
+  <p>This is the first paragraph of the article.</p>
+  <hr>
+  <p>This is the second paragraph of the article.</p>
+  <hr>
+  <p>This is the third paragraph of the article.</p>
+  <hr>
+  <p>This is the fourth paragraph of the article.</p>
+</article>
+
+<p>
+  “The only limit<br>
+  to our realization of tomorrow<br>
+  is our doubts of today.”
+</p>
+
+<h1>Spicy Bites Restaurant</h1>
+<h2>Starters</h2>
+<h3>Spring Rolls</h3>
+<h2>Mains</h2>
+<h3>Butter Chicken</h3>
+<h2>Desserts</h2>
+<h3>Gulab Jamun</h3>
+
+<p>Learn about <b>HTML</b>, <i>CSS</i>, and <u>JavaScript</u> to build websites effectively.</p>
+
+<!-- 11–15: Formatting Tags -->
+<p>This sentence includes <b>bold</b>, <i>italic</i>, and <u>underline</u>.</p>
+
+<p>
+  Learning to code is important. 
+  <mark>Practice regularly</mark>, 
+  <mark>build projects</mark>, and 
+  <mark>read documentation</mark> to improve.
+</p>
+
+<pre><code>
+function greet() {
+  console.log("Hello, Naresh!");
+}
+</code></pre>
+
+<p>Press <kbd>Ctrl</kbd> + <kbd>S</kbd> to save your work.</p>
+
+<p>CO<sub>2</sub> + H<sub>2</sub> → CH<sub>4</sub><sup>*</sup></p>
+
+<!-- 16–20: Links -->
+<a href="page2.html">Go to Page 2</a><br>
+<a href="./folder/info.html">Visit Info Page</a><br>
+<a href="https://www.google.com" target="_blank">Search on Google</a><br><br>
+
+<a href="#about">Jump to About Section</a><br>
+<a href="#bottom">Go to Bottom</a><br><br>
+
+<a href="https://store.example.com">
+  <img src="cr.jpeg" alt="Cricket" width="150">
+</a><br><br>
+
+<a href="file.pdf" download>Download PDF</a><br><br>
+
+<!-- 21–25: Images -->
+<h1>My Favorite Animals</h1>
+<figure>
+  <img src="elephant.jpeg" alt="Elephant" width="200">
+  <figcaption>Majestic Elephant</figcaption>
+</figure>
+<figure>
+  <img src="tiger.jpeg" alt="Tiger" width="200">
+  <figcaption>Fearless Tiger</figcaption>
+</figure>
+<figure>
+  <img src="dog.jpeg" alt="Dog" width="200">
+  <figcaption>Dog</figcaption>
+</figure>
+
+<div style="display:inline-block;">
+  <img src="bird.jpeg" alt="Bird" width="150">
+</div>
+<div style="display:inline-block; vertical-align:top;">
+  <p>This bird has vibrant feathers and sings sweetly.</p>
+</div>
+
+<div style="width: 100%; max-width: 500px;">
+  <img src="cr.jpeg" alt="Responsive Image" width="100%">
+</div>
+
+<img src="download.jpeg" alt="Image not found – HTML" width="200">
+
+<!-- 26–30: Lists -->
+<h2>Recipe: Masala Dosa</h2>
+<ol>
+  <li>Soak rice and lentils</li>
+  <li>Grind to make batter</li>
+  <li>Ferment overnight</li>
+  <li>Cook on tawa and add potato filling</li>
+</ol>
+
+<ul>
+  <li>Asia
+    <ul>
+      <li>Japan</li>
+      <li>Thailand</li>
+    </ul>
+  </li>
+  <li>Europe
+    <ul>
+      <li>France</li>
+      <li>Italy</li>
+    </ul>
+  </li>
+</ul>
+
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheets</dd>
+  <dt>JS</dt>
+  <dd>JavaScript</dd>
+</dl>
+
+<div style="display: flex;">
+  <ul>
+    <li>Frontend</li>
+    <li>HTML</li>
+    <li>CSS</li>
+  </ul>
+  <ul style="margin-left: 50px;">
+    <li>Backend</li>
+    <li>Node.js</li>
+    <li>Python</li>
+  </ul>
+</div>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#contact">Contact</a></li>
+</ul>
+
+<!-- Internal Section Example -->
+<h2 id="about">About Section</h2>
+<p>This is the about section you jumped to!</p>
+
+<h2 id="bottom">Bottom of the Page</h2>
+<p>You've reached the end!</p>
+
+</body>
+</html>
