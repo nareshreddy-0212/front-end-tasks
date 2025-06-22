@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Projects Collection</title>
+</head>
+<body>
+  <h1>This is my Task-6 web page</h1>
+
+  <!-- 1. Personal Bio Page -->
+  <section>
+    <h1>Naresh Reddy</h1>
+    <img src="naresh photo.jpg" alt="Profile Image" width="200" height="200">
+    <p>Hello! I'm Naresh Reddy, an enthusiastic web developer and lifelong learner.</p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>Python</li>
+      <li>Java</li>
+    </ul>
+
+    <h2>Education</h2>
+    <ol>
+      <li>B.Tech Computer Science - MITS COLLEGE</li>
+      <li>Intermediate -Krishna Reddy Siddaratha Junior college</li>
+    </ol>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="nareshkumarreddy0212@gmail.com">nareshkumarreddy0212@gmail.com</a></p>
+    <p>Phone: <a href="tel:+916300584273"><b>+91-6300584273 </b></a></p>
+
+    <h2>Social Links</h2>
+    <ul>
+      <li><a href="www.linkedin.com/in/naresh-kumar-836927294" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/nareshreddy-0212/front-end-tasks" target="_blank">GitHub</a></li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- 2. Favorite Movies/Books Gallery -->
+  <section>
+    <h1>Favorite Movies & Books</h1>
+
+    <h2>Maharshi</h2>
+    <img src="m.jpg" alt="Maharshi Movie Poster" width="200">
+    <p><strong>Maharshi</strong> is a Telugu film about friendship, success, and purpose.</p>
+    <p>Rating: <mark>4.8/5</mark></p>
+    <ul>
+      <li>Main Character: Rishi</li>
+      <li>Theme: Rural empowerment</li>
+    </ul>
+    <a href="https://www.imdb.com/title/tt8960382/" target="_blank">IMDb</a> |
+    <a href="https://www.youtube.com/watch?v=SEpWlFfpTkA" target="_blank">Trailer</a>
+
+    <h2>The Alchemist</h2>
+    <img src="a.jpg"alt="The Alchemist" width="200">
+    <p><em>The Alchemist</em> is an inspiring novel about following your dreams.</p>
+    <p>Rating: <small>5/5</small></p>
+    <ol>
+      <li>Protagonist: Santiago</li>
+      <li>Message: Believe in your journey</li> 
+    </ol>
+    <a href="https://www.goodreads.com/book/show/865.The_Alchemist" target="_blank">Goodreads</a>
+  </section>
+
+  <hr>
+
+  <!-- 3. Restaurant Menu Page -->
+  <section>
+    <h1>Taste Haven</h1>
+
+    <h2>Starters</h2>
+    <ul>
+      <li>Veg Soup - <strong>₹99</strong></li>
+      <li>Paneer Tikka - <del>₹150</del> <strong>₹120</strong></li>
+    </ul>
+
+    <h2>Main Course</h2>
+    <ul>
+      <li>Butter Naan + Paneer Butter Masala - <strong>₹199</strong></li>
+    </ul>
+
+    <h2>Desserts</h2>
+    <ul>
+      <li>Gulab Jamun - <strong>₹50</strong></li>
+    </ul>
+
+    <img src="d.jpg" alt="Restaurant Dishes" width="300">
+
+    <p>Find us on <a href="https://maps.google.com" target="_blank">Google Maps</a></p>
+    <p>Email: <a href="nareshkumarreddy0212@gmail.com">tastehaven@example.com</a></p>
+    <p>Phone: <a href="tel:+916300584273"><strong>+91-6300584273</strong></a></p>
+  </section>
+
+  <hr>
+
+  <!-- 4. Travel Bucket List -->
+  <section>
+    <h1>My Travel Bucket List</h1>
+
+    <ol>
+      <li>
+        <figure>
+          <img src="p.jpg" alt="Eiffel Tower" width="300">
+          <figcaption>Paris, France</figcaption>
+        </figure>
+        <p>I dream of seeing the Eiffel Tower and tasting authentic French pastries.</p>
+        <a href="https://en.wikipedia.org/wiki/Paris" target="_blank">More about Paris</a>
+      </li>
+
+      <li>
+        <figure>
+          <img src="japan.jpg" alt="Mount Fuji" width="300">
+          <figcaption>Japan</figcaption>
+        </figure>
+        <p>I want to experience cherry blossoms and explore Japanese culture.</p>
+        <a href="https://en.wikipedia.org/wiki/Japan" target="_blank">Learn more</a>
+      </li>
+    </ol>
+  </section>
+
+  <hr>
+
+  <!-- 5. Simple Portfolio Landing Page -->
+  <section>
+    <h1>Welcome to My Portfolio</h1>
+
+    <h2>About Me</h2>
+    <p>Hi, I’m Naresh! I love building websites and solving tech problems.</p>
+
+    <h2>Projects</h2>
+    <ul>
+      <li>Tourism App</li>
+      <li>Portfolio Website</li>
+      <li>To-do List App</li>
+    </ul>
+
+    <img src="tourism.png" alt="Project Preview" width="300">
+
+    <p>See my work on <a href="https://github.com/nareshreddy-0212/front-end-tasks" target="_blank">GitHub</a></p>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="nareshkumarreddy03212@gmail.com">naresh@example.com</a></p>
+    <p>Phone: <a href="tel:+916300584273">+91-6300584273</a></p>
+  </section>
+
+</body>
+</html>
