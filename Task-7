@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NoiseFit Halo Smartwatch</title>
+</head>
+<body>
+<h1>This is my Task-7 web page</h1>
+  <h1 title="NoiseFit Halo: AMOLED Display & BT Calling">NoiseFit Halo Smartwatch</h1>
+
+  <img src="noise.jpg   " alt="NoiseFit Halo Smartwatch Image" width="300">
+
+  <p>The NoiseFit Halo is a premium smartwatch featuring an AMOLED display, Bluetooth calling, fitness tracking, and long battery life—perfect for a stylish and active lifestyle.</p>
+
+  <ul>
+    <li>1.43" AMOLED Display</li>
+    <li>Bluetooth Calling with Built-in Mic</li>
+    <li>100+ Sports Modes</li>
+    <li>Up to 7 Days Battery Life</li>
+    <li>IP68 Water Resistance</li>
+  </ul>
+
+  <p>
+    Price: <del>₹5,999</del> <ins>₹3,499</ins>
+  </p>
+
+  <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; border-radius: 4px;">Buy Now</a>
+
+</body>
+</html>
