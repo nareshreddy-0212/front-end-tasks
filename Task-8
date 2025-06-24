@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HTML Table and Form Tasks</title>
+</head>
+<body>
+<h1>This is my Task-8 web page</h1>
+  <h1>  Table Tasks (1–15)</h1>
+
+  <!-- 1: 3x3 Table -->
+  <h3>1. Basic 3x3 Table</h3>
+  <table border="1">
+    <tr><td>1</td><td>2</td><td>3</td></tr>
+    <tr><td>4</td><td>5</td><td>6</td></tr>
+    <tr><td>7</td><td>8</td><td>9</td></tr>
+  </table>
+
+  <!-- 2: Table with Headings -->
+  <h3>2. Table with Headings</h3>
+  <table border="1">
+    <tr><th>Name</th><th>Age</th><th>City</th></tr>
+    <tr><td>Naresh</td><td>22</td><td>Madanapalle</td></tr>
+  </table>
+
+  <!-- 3: Students Table -->
+  <h3>3. Students Table</h3>
+  <table border="1">
+    <tr><th>Name</th><th>Roll No</th><th>Class</th><th>Marks</th></tr>
+    <tr><td>Mani</td><td>101</td><td>10</td><td>90</td></tr>
+    <tr><td>Jana</td><td>102</td><td>10</td><td>85</td></tr>
+    <tr><td>Gopi</td></td></td><td>103</td><td>10</td><td>95</td></tr>
+    <tr><td>Kiran</td><td>104</td><td>10</td><td>88</td></tr>
+    <tr><td>Vikram</td><td>105</td><td>10</td><td>92</td></tr>
+  </table>
+
+  <!-- 4: Border using style -->
+  <h3>4. Table with Border using Style</h3>
+  <table style="border: 1px solid black;" border="1">
+    <tr><td>Sample</td><td>Data</td></tr>
+  </table>
+
+  <!-- 5: Colspan -->
+  <h3>5. Colspan Example</h3>
+  <table border="1">
+    <tr><td colspan="2">Merged Column</td></tr>
+    <tr><td>Left</td><td>Right</td></tr>
+  </table>
+
+  <!-- 6: Rowspan -->
+  <h3>6. Rowspan Example</h3>
+  <table border="1">
+    <tr><td rowspan="2">Merged Row</td><td>Row 1</td></tr>
+    <tr><td>Row 2</td></tr>
+  </table>
+
+  <!-- 7: Timetable -->
+  <h3>Timetable with Subject 1 & Subject 2</h3>
+<table border="1">
+  <tr>
+    <th>Day</th>
+    <th>Subject 1</th>
+    <th>Subject 2</th>
+  </tr>
+  <tr>
+    <td>Monday</td>
+    <td>DBMS</td>
+    <td>DMS</td>
+  </tr>
+  <tr>
+    <td>Tuesday</td>
+    <td>Python</td>
+    <td>Java</td>
+  </tr>
+  <tr>
+    <td>Wednesday</td>
+    <td>C</td>
+    <td>BEEE</td>
+  </tr>
+  <tr>
+    <td>Thursday</td>
+    <td>BCME</td>
+    <td>Data Structures</td>
+  </tr>
+  <tr>
+    <td>Friday</td>
+    <td>FSD</td>
+    <td>ADS</td>
+  </tr>
+  <tr>
+    <td>Saturday</td>
+    <td>TECH</td>
+    <td>English</td>
+  </tr>
+</table>
+
+
+  <!-- 8: Alternate Row Colors -->
+  <h3>8. Alternate Row Colors</h3>
+  <table border="1">
+    <tr style="background-color: lightgray;"><td>Row 1</td></tr>
+    <tr><td>Row 2</td></tr>
+    <tr style="background-color: lightgray;"><td>Row 3</td></tr>
+  </table>
+
+  <!-- 9: Favorite Movies -->
+  <h3>9. Favorite Movies</h3>
+  <table border="1">
+    <tr><th>Title</th><th>Genre</th><th>Year</th><th>IMDB</th></tr>
+    <tr><td>Maharshi</td><td>Drama</td><td>2019</td><td>7.6</td></tr>
+    <tr><td>RRR</td><td>Action</td><td>2022</td><td>8.0</td></tr>
+    <tr><td>Baahubali</td><td>Epic</td><td>2015</td><td>8.2</td></tr>
+    <tr><td>KGF</td><td>Action</td><td>2018</td><td>8.3</td></tr>
+    <tr><td>Pushpa</td><td>Action</td><td>2021</td><td>7.6</td></tr>
+  </table>
+
+  <!-- 10: thead, tbody, tfoot -->
+  <h3>10. Table with thead, tbody, tfoot</h3>
+  <table border="1">
+    <thead><tr><th>Item</th><th>Qty</th></tr></thead>
+    <tbody><tr><td>Pen</td><td>5</td></tr></tbody>
+    <tfoot><tr><td>Total</td><td>5</td></tr></tfoot>
+  </table>
+
+  <!-- 11: Styling -->
+  <h3>11. Centered Text and Padding</h3>
+  <table border="1">
+    <tr><td style="text-align:center; padding:10px;">Centered</td></tr>
+  </table>
+
+  <!-- 12: Image in Cell -->
+  <h3>12. Image in Cell</h3>
+  <table border="1">
+    <tr><td><img src="na.jpeg" alt="Image"></td></tr>
+  </table>
+
+  <!-- 13: Product Pricing Table -->
+  <h3>13. Product Pricing Table</h3>
+  <table border="1">
+    <tr><th>Product</th><th>Price</th><th>Buy</th></tr>
+    <tr><td>Pen</td><td>₹10</td><td><a href="#">Buy</a></td></tr>
+  </table>
+
+  <!-- 14: Tooltips on Headings -->
+  <h3>14. Tooltip on Table Heading</h3>
+  <table border="1">
+    <tr><th title="Smartphone Model">Model</th><th title="Battery Capacity">Battery</th></tr>
+    <tr><td>Phone A</td><td>4000mAh</td></tr>
+  </table>
+
+  <!-- 15: Smartphone Comparison -->
+ <!-- 15: Smartphone Comparison with Images -->
+<h3>15. Smartphone Comparison</h3>
+<table border="1">
+  <tr>
+    <th>Feature</th>
+    <th> <br><img src="realme.jpg" alt="Phone A"></th>
+    <th><br><img src="oppo.jpg" alt="Phone B"></th>
+  </tr>
+  <tr><td>Display</td><td>6.5"</td><td>6.7"</td></tr>
+  <tr><td>RAM</td><td>6GB</td><td>8GB</td></tr>
+  <tr><td>Battery</td><td>4000mAh</td><td>5000mAh</td></tr>
+  <tr><td>Camera</td><td>48MP</td><td>64MP</td></tr>
+  <tr><td>Price</td><td>₹15000</td><td>₹20000</td></tr>
+</table>
+
+
+  <h1>Form Tasks (16–30)</h1>
+
+  <!-- 16–30: Form Example -->
+  <form action="#" method="post">
+
+    <!-- 16, 17: Basic Form with Placeholders -->
+    <h3>16–17. Basic Form</h3>
+    <input type="text" placeholder="Enter Name" id="name"><br><br>
+    <input type="email" placeholder="Enter Email" id="email"><br><br>
+    <textarea placeholder="Enter Message"></textarea><br><br>
+
+    <!-- 18: Submit and Reset -->
+    <input type="submit" value="Submit"> 
+    <input type="reset" value="Reset"><br><br>
+
+    <!-- 19: Fieldset -->
+    <fieldset>
+      <legend>Personal Info</legend>
+      <label for="name">Name:</label>
+      <input type="text" id="name2"><br><br>
+    </fieldset>
+
+    <!-- 20: Label -->
+    <label for="email2">Email:</label>
+    <input type="email" id="email2"><br><br>
+
+    <!-- 21: Password -->
+    <h3>21. Password</h3>
+    <input type="password" placeholder="Password"><br><br>
+
+    <!-- 22: Radio -->
+    <h3>22. Gender</h3>
+    <input type="radio" name="gender" value="Male"> Male
+    <input type="radio" name="gender" value="Female"> Female
+    <input type="radio" name="gender" value="Other"> Other<br><br>
+
+    <!-- 23: Checkbox -->
+    <h3>23. Languages</h3>
+    <input type="checkbox" value="HTML"> HTML
+    <input type="checkbox" value="CSS"> CSS
+    <input type="checkbox" value="JS"> JavaScript<br><br>
+
+    <!-- 24: Dropdown -->
+    <h3>24. Country</h3>
+    <select>
+      <option>India</option>
+      <option>USA</option>
+      <option>UK</option>
+    </select><br><br>
+
+    <!-- 25: Textarea -->
+    <h3>25. Feedback</h3>
+    <textarea placeholder="Write your comments"></textarea><br><br>
+
+    <!-- 26: Date -->
+    <h3>26. Date</h3>
+    <input type="date"><br><br>
+
+    <!-- 27: Number -->
+    <h3>27. Number</h3>
+    <input type="number" min="1" max="100"><br><br>
+
+    <!-- 28: File -->
+    <h3>28. File Upload</h3>
+    <input type="file"><br><br>
+
+    <!-- 29: Validation -->
+    <h3>29. Validation</h3>
+    <input type="text" required maxlength="10" pattern="[A-Za-z]+" placeholder="Only letters"><br><br>
+
+    <!-- 30: Action/Method (already shown in form tag above) -->
+
+  </form>
+
+</body>
+</html>
