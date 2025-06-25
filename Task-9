@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Tasks with Questions</title>
+<h1>This is my Task-9 web page</h1>
+  <!-- Link to External CSS -->
+  <link rel="stylesheet" href="Task-9.css">
+
+  <!-- Internal CSS -->
+  <style>
+    h1 {
+      color: rgb(155, 56, 201);
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .card {
+      border: 1px solid gray;
+      padding: 10px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+      margin: 15px 0;
+    }
+
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+
+    .btn {
+      padding: 8px 16px;
+      border: none;
+      margin: 5px;
+    }
+
+    .primary {
+      background-color: royalblue;
+      color: white;
+    }
+
+    .secondary {
+      background-color: seagreen;
+      color: white;
+    }
+
+    .center-text {
+      text-align: center;
+    }
+
+    #banner {
+      font-size: 30px;
+      background-color: black;
+      color: white;
+      padding: 15px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    #intro {
+      font-style: italic;
+      padding: 10px;
+    }
+
+    #box1 {
+      width: 150px;
+      height: 150px;
+      background-color: tomato;
+      margin: 10px 0;
+    }
+
+    #submitBtn {
+      background-color: navy;
+      color: white;
+      border: 2px solid #000;
+      padding: 10px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      background-color: #fdfdfd;
+    }
+
+    h1, h2, h3 {
+      font-family: Georgia;
+      color: rgb(110, 205, 205);
+    }
+
+    p, li, a {
+      line-height: 1.6;
+    }
+
+    .btn-primary, .btn-secondary {
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+
+    section {
+      margin-bottom: 30px;
+      padding: 10px;
+      border-bottom: 1px dashed #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Task 1 -->
+  <section>
+    <h3>1. Inline CSS: Red Paragraph</h3>
+    <p style="color: red;">This is a red paragraph using inline CSS.</p>
+  </section>
+
+  <!-- Task 2 -->
+  <section>
+    <h3>2. Inline CSS: Yellow Background Div</h3>
+    <div style="background-color: yellow;">Yellow background using inline CSS.</div>
+  </section>
+
+  <!-- Task 3–4 -->
+  <section>
+    <h3>3–4. Internal CSS: Blue h1, 18px Paragraph</h3>
+    <h1>This h1 is blue</h1>
+    <p>This paragraph has font size 18px and line height.</p>
+  </section>
+
+  <!-- Task 5–6 -->
+  <section>
+    <h3>5–6. External CSS: Lightgray Background, Green h2</h3>
+    <h2>External CSS Styled Heading</h2>
+    <p>Body background and h2 are styled externally.</p>
+  </section>
+
+  <!-- Task 7 -->
+  <section>
+    <h3>7. CSS Priority Test</h3>
+    <p style="color: orange;" class="highlight">Inline wins over internal and class styles.</p>
+  </section>
+
+  <!-- Task 8 -->
+  <section>
+    <h3>8. Styled Form with Internal CSS</h3>
+    <form>
+      <input type="text" placeholder="Your Name">
+      <button>Submit</button>
+    </form>
+  </section>
+
+  <!-- Task 9 -->
+  <section>
+    <h3>9. Styled Table with External CSS</h3>
+    <table>
+      <tr><th>Name</th><th>Score</th></tr>
+      <tr><td>Naresh</td><td>95</td></tr>
+      <tr><td>Mani</td><td>88</td></tr>
+    </table>
+  </section>
+
+  <!-- Task 10 -->
+  <section>
+    <h3>10. Link with Hover Effect</h3>
+    <a href="#">Hover over this link</a>
+  </section>
+
+  <!-- Task 11 -->
+  <section>
+    <h3>11. Warning Box (Inline CSS)</h3>
+    <div style="background-color: red; color: white; padding: 10px;">⚠ Warning message styled inline.</div>
+  </section>
+
+  <!-- Task 12–15 -->
+  <section>
+    <h3>12–15. Element Selectors</h3>
+    <h3>Uppercase h3</h3>
+    <p>Styled paragraph</p>
+    <ul><li>Item 1</li><li>Item 2</li></ul>
+    <a href="#">Link without underline</a>
+  </section>
+
+  <!-- Task 16–20 -->
+  <section>
+    <h3>16–20. Class Selectors</h3>
+    <div class="card">Card Block 1</div>
+    <div class="card">Card Block 2</div>
+    <p class="highlight">This paragraph is highlighted.</p>
+    <button class="btn">Button</button>
+    <button class="btn primary">Primary</button>
+    <button class="btn secondary">Secondary</button>
+    <h2 class="center-text">This is centered</h2>
+  </section>
+
+  <!-- Task 21–25 -->
+  <section>
+    <h3>21–25. ID Selectors</h3>
+    <div id="banner">Welcome Banner</div>
+    <p id="intro">Intro Paragraph</p>
+    <div id="box1"></div>
+    <button id="submitBtn">Submit</button>
+  </section>
+
+  <!-- Task 26–27 -->
+  <section>
+    <h3>26–27. Universal Selector</h3>
+    <p>Global styles applied using * selector</p>
+  </section>
+
+  <!-- Task 28–30 -->
+  <section>
+    <h3>28–30. Grouping Selectors</h3>
+    <h1>Grouped Heading</h1>
+    <h2>Grouped Heading</h2>
+    <h3>Grouped Heading</h3>
+    <p>Grouped Paragraph</p>
+    <ul><li>Grouped List Item</li></ul>
+    <a href="#">Grouped Link</a><br><br>
+    <button class="btn-primary">Grouped Primary</button>
+    <button class="btn-secondary">Grouped Secondary</button>
+  </section>
+
+  <!-- Footer -->
+  <div id="footer">Footer Section</div>
+
+</body>
+</html>
+
+
+CSS-------
+
+body {
+  background-color: lightgray;
+}
+
+h2 {
+  color: green;
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+
+a:hover {
+  color: red;
+  font-weight: bold;
+}
