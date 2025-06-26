@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Tasks 1–30 Demo</title>
+  <style>
+    /* 1–3: Named Colors */
+    .task1 { color: blue; }
+    .task2 { background-color: lightgreen; color: white; padding: 1em; }
+    .legend { list-style: none; padding: 0; }
+    .legend li.success { color: green; }
+    .legend li.danger  { color: red; }
+
+    /* 4–6: Hex Colors */
+    .task4 { color: #3498db; }
+    .task5 { background: #ff5733; color: white; padding: .5em; }
+    .hex-box { display: inline-block; width: 100px; height: 50px; margin: .5em; color: white; text-align: center; line-height: 50px; }
+    .hex-red   { background: #e74c3c; }
+    .hex-blue  { background: #2980b9; }
+    .hex-green { background: #27ae60; }
+
+    /* 7–9: RGB Colors */
+    .task7 { color: rgb(255, 99, 71); }
+    .task8 { background: rgb(240,240,240); padding: 1em; }
+    .rgb-shade { margin: .5em 0; }
+    .rgb-light  { color: rgb(100,149,237); } /* cornflowerblue */
+    .rgb-med    { color: rgb(65,105,225); }  /* royalblue */
+    .rgb-dark   { color: rgb(25,25,112); }   /* midnightblue */
+
+    /* 10–12: RGBA Colors */
+    .overlay-container {
+      position: relative;
+      width: 300px; height: 150px;
+      background: url('https://via.placeholder.com/300x150');
+      margin-bottom: 1em;
+    }
+    .overlay {
+      position: absolute; top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white; display: flex;
+      align-items: center; justify-content: center;
+    }
+    .task11-btn {
+      background: rgba(255, 0, 0, 0.7);
+      color: white; border: none; padding: .5em 1em;
+      cursor: pointer;
+    }
+    .task12 {
+      background: rgba(0, 128, 0, 0.3);
+      padding: 1em; display: inline-block;
+    }
+
+    /* 13–15: HSL & HSLA */
+    .task13 { color: hsl(200, 100%, 50%); }
+    .task14 {
+      background: hsl(120, 60%, 70%);
+      color: hsl(0, 0%, 20%);
+      padding: 1em;
+    }
+    .task15 {
+      width: 200px; height: 100px;
+      background: hsla(180, 100%, 50%, 0.2);
+      border: 1px solid hsla(180, 100%, 50%, 0.6);
+      display: flex; align-items: center; justify-content: center;
+    }
+
+    /* 16–18: Text Color & Font Family */
+    .task16 { color: navy; }
+    .task17 { font-family: "Courier New", monospace; }
+    .task18 { font-family: 'Outfit', sans-serif; }
+
+    /* 19–21: Font Size & Weight */
+    .task19-h { font-size: 36px; }
+    .task19-p { font-size: 18px; }
+    .task20 strong { font-weight: bold; }
+    .task21-light  { font-weight: lighter; }
+    .task21-normal { font-weight: normal; }
+    .task21-bold   { font-weight: bold; }
+
+    /* 22–24: Text Align & Decoration */
+    .task22-h { text-align: center; }
+    .task22-p { text-align: left; }
+    .task22-f { text-align: right; }
+    .task23 a { text-decoration: none; color: teal; }
+    .task24 { text-decoration: overline underline; }
+
+    /* 25–26: Text Transform */
+    .nav { text-transform: uppercase; list-style: none; display: flex; gap: 1em; }
+    .task26-cap   { text-transform: capitalize; }
+    .task26-low   { text-transform: lowercase; }
+
+    /* 27–30: Text Shadow */
+    .task27 { text-shadow: 2px 2px #ccc; }
+    .task28 { text-shadow: 0 0 8px red; }
+    .task29 { text-shadow:
+        1px 1px #444,
+        2px 2px #888,
+        3px 3px #ccc;
+    }
+    .rainbow span:nth-child(1) { text-shadow: 2px 2px red; }
+    .rainbow span:nth-child(2) { text-shadow: 2px 2px orange; }
+    .rainbow span:nth-child(3) { text-shadow: 2px 2px yellow; }
+    .rainbow span:nth-child(4) { text-shadow: 2px 2px green; }
+    .rainbow span:nth-child(5) { text-shadow: 2px 2px blue; }
+    .rainbow span:nth-child(6) { text-shadow: 2px 2px indigo; }
+    .rainbow span:nth-child(7) { text-shadow: 2px 2px violet; }
+
+    body { font-family: sans-serif; padding: 1em; line-height: 1.4; }
+    section { margin-bottom: 2em; border-bottom: 1px solid #ddd; padding-bottom: 1em; }
+  </style>
+</head>
+<body>
+
+  <section>
+    <h1>This is my Task-10 web page</h1>
+    <h2> 1–3: Named Colors</h2>
+    <p class="task1">1. This paragraph’s text is <strong>blue</strong>.</p>
+    <div class="task2">2. Light green background with white text.</div>
+    <ul class="legend">
+      <li class="success">3. Success = green</li>
+      <li class="danger">3. Danger = red</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2> 4–6: Hexadecimal Colors</h2>
+    <h3 class="task4">4. Heading in #3498db.</h3>
+    <div class="task5">5. Box with #ff5733 bg and white text.</div>
+    <div class="hex-box hex-red">Red</div>
+    <div class="hex-box hex-blue">Blue</div>
+    <div class="hex-box hex-green">Green</div>
+  </section>
+
+  <section>
+    <h2> 7–9: RGB Colors</h2>
+    <h3 class="task7">7. Heading in Tomato (rgb(255,99,71)).</h3>
+    <section class="task8">8. Section with light grey (rgb(240,240,240)).</section>
+    <p class="rgb-shade rgb-light">9. Light blue shade.</p>
+    <p class="rgb-shade rgb-med">9. Medium blue shade.</p>
+    <p class="rgb-shade rgb-dark">9. Dark blue shade.</p>
+  </section>
+
+  <section>
+    <h2> 10–12: RGBA Colors</h2>
+    <div class="overlay-container">
+      <div class="overlay">10. 50% black overlay</div>
+    </div>
+    <button class="task11-btn">11. 70% opaque red button</button>
+    <p class="task12">12. RGBA background behind text.</p>
+  </section>
+
+  <section>
+    <h2> 13–15: HSL & HSLA</h2>
+    <p class="task13">13. Text styled with hsl(200,100%,50%).</p>
+    <div class="task14">14. Box with hsl bg and dark text.</div>
+    <div class="task15">15. Soft HSLA overlay box.</div>
+  </section>
+
+  <section>
+    <h2> 16–18: Text Color & Font Family</h2>
+    <p class="task16">16. Navy text color.</p>
+    <p class="task17">17. Courier New, monospace font.</p>
+    <h3 class="task18">18. Outfit, sans-serif heading.</h3>
+  </section>
+
+  <section>
+    <h2> 19–21: Font Size & Weight</h2>
+    <h3 class="task19-h">19. 36px heading</h3>
+    <p class="task19-p">19. 18px paragraph.</p>
+    <p class="task20">20. This word is <strong>bold</strong> inside a paragraph.</p>
+    <p class="task21-light">21. Lighter weight.</p>
+    <p class="task21-normal">21. Normal weight.</p>
+    <p class="task21-bold">21. Bold weight.</p>
+  </section>
+
+  <section>
+    <h2> 22–24: Text Align & Decoration</h2>
+    <h3 class="task22-h">22. Centered heading</h3>
+    <p class="task22-p">22. Left-aligned paragraph.</p>
+    <footer class="task22-f">22. Right-aligned footer.</footer>
+    <p class="task23"><a href="#">23. Link without underline</a></p>
+    <h3 class="task24">24. Underline & overline on heading</h3>
+  </section>
+
+  <section>
+    <h2> 25–26: Text Transform</h2>
+    <ul class="nav">
+      <li>Home</li><li>About</li><li>Contact</li>
+    </ul>
+    <p class="task26-cap">25. Capitalized each word.</p>
+    <p class="task26-low">26. lowercase text.</p>
+  </section>
+
+  <section>
+    <h2> 27–30: Text Shadow</h2>
+    <h3 class="task27">27. Light shadow.</h3>
+    <h3 class="task28">28. Red glow.</h3>
+    <h3 class="task29">29. 3D multi-shadow.</h3>
+    <p class="rainbow">
+      <span>R</span><span>A</span><span>I</span><span>N</span><span>B</span><span>O</span><span>W</span>
+    </p>
+  </section>
+
+</body>
+</html>
