@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CSS Layout Practice</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+
+    section { border-top: 2px solid #ccc; padding: 20px; }
+
+    /* Display tasks */
+    .block-span { display: block; background: #d0f0fd; padding: 10px; margin-bottom: 10px; }
+    .inline-div { display: inline; background: #ffe4b5; padding: 10px; }
+    .inline-block { display: inline-block; width: 150px; height: 50px; background: #90ee90; margin-right: 10px; }
+    .hover-container { background: #eee; padding: 10px; position: relative; }
+    .hover-text { display: none; background: #ffc; padding: 5px; position: absolute; top: 40px; left: 0; }
+    .hover-container:hover .hover-text { display: block; }
+    .block-link { display: block; background: #add8e6; padding: 10px; text-decoration: none; color: #000; margin-top: 10px; }
+
+    /* Positioning */
+    .static-box { border: 1px solid #999; padding: 10px; margin-bottom: 5px; }
+    .relative-box { position: relative; top: 20px; left: 30px; background: #e6e6fa; padding: 10px; width: 200px; margin-bottom: 10px; }
+    .relative-input { position: relative; margin-top: 20px; }
+    .relative-input label { position: relative; top: -20px; left: 0; background: #fff; padding: 2px 6px; }
+
+    .abs-wrapper { position: relative; width: 300px; height: 200px; background: #f0f0f0; margin-bottom: 10px; }
+    .abs-box { position: absolute; top: 20px; right: 20px; background: crimson; color: #fff; padding: 5px 10px; }
+
+    .overlay-wrapper { position: relative; display: inline-block; }
+    .overlay-wrapper img.overlay { position: absolute; top: 10px; left: 10px; width: 50px; }
+
+    .tooltip-wrap { display: inline-block; position: relative; margin-top: 20px; }
+    .tooltip-wrap .tooltip { position: absolute; top: 100%; left: 0; background: #333; color: #fff; padding: 5px; display: none; }
+    .tooltip-wrap:hover .tooltip { display: block; }
+
+    .fixed-header { position: fixed; top: 0; left: 0; width: 100%; background: #333; color: white; padding: 10px; text-align: center; z-index: 1000; }
+    .fixed-footer { position: fixed; bottom: 0; left: 0; width: 100%; background: #444; color: white; padding: 10px; text-align: center; z-index: 1000; }
+    .scroll-top-btn { position: fixed; bottom: 70px; right: 20px; background: #008cba; color: white; padding: 10px; border: none; cursor: pointer; }
+
+    .sticky-nav { position: sticky; top: 50px; background: #ddd; padding: 10px; z-index: 900; }
+
+    .scroll-box { height: 150px; overflow-y: scroll; background: #fafafa; margin: 20px 0; }
+    .scroll-box h4 { position: sticky; top: 0; background: #f5f5f5; margin: 0; padding: 5px; }
+
+    /* Float and clear */
+    .float-img { float: left; margin-right: 10px; }
+    .float-box-left { float: left; width: 30%; background: #ffe4e1; padding: 10px; }
+    .float-box-right { float: right; width: 30%; background: #e0ffff; padding: 10px; }
+    .float-center { margin: 0 auto; width: 40%; text-align: center; background: #f5f5f5; padding: 10px; clear: both; }
+
+    .nav-float li { float: left; list-style: none; padding: 10px; background: #cce; margin-right: 5px; }
+    .clearfix::after { content: ""; display: table; clear: both; }
+
+    /* Z-index demo */
+    .z-stack { position: relative; }
+    .z1, .z2, .z3 { width: 100px; height: 100px; position: absolute; top: 0; left: 0; }
+    .z1 { background: lightblue; z-index: 1; }
+    .z2 { background: lightgreen; z-index: 2; top: 20px; left: 20px; }
+    .z3 { background: coral; z-index: 3; top: 40px; left: 40px; }
+
+    .modal { position: fixed; top: 20%; left: 30%; width: 300px; background: #222; color: white; padding: 20px; z-index: 9999; }
+
+    main { padding-top: 60px; padding-bottom: 80px; }
+  </style>
+</head>
+<body>
+ <h1>This is my Task-12 web page</h1>   
+  <header class="fixed-header">Fixed Header</header>
+  <nav class="sticky-nav">Sticky Navigation Bar</nav>
+
+  <main>
+
+    <section>
+      <h2>Display Examples</h2>
+      <span class="block-span">Block-style span</span>
+      <div class="inline-div">Inline div</div>
+      <div class="inline-block">Box A</div>
+      <div class="inline-block">Box B</div>
+      <div class="hover-container">Hover Me
+        <span class="hover-text">Hello!</span>
+      </div>
+      <a class="block-link" href="#">Block Link</a>
+    </section>
+
+    <section>
+      <h2>Positioning Examples</h2>
+      <div class="static-box">Static Element 1</div>
+      <div class="static-box">Static Element 2</div>
+      <div class="relative-box">Relative Positioned Box</div>
+      <div class="relative-input">
+        <label>Username</label>
+        <input type="text" />
+      </div>
+      <div class="abs-wrapper">
+        <div class="abs-box">Close</div>
+        <p>Content inside absolute wrapper.</p>
+      </div>
+      <div class="overlay-wrapper">
+        <img src="nat.jpeg" />
+        <img class="overlay" src="nature.jpeg" />
+      </div>
+      <div class="tooltip-wrap">Hover Me
+        <span class="tooltip">I'm a tooltip</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Floating Layout</h2>
+      <img src="p.jpg" class="float-img" />
+      <p>This text wraps next to the floated image. Float makes elements wrap beside each other if space allows.</p>
+      <div class="clearfix">
+        <div class="float-box-left">Left Float</div>
+        <div class="float-box-right">Right Float</div>
+      </div>
+      <div class="float-center">Center Content</div>
+      <ul class="nav-float clearfix">
+        <li>Home</li><li>About</li><li>Services</li><li>Contact</li>
+      </ul>
+    </section>
+s
+    <section class="scroll-box">
+      <h4>Sticky Heading Inside Scroll Box</h4>
+      <p>Lots of overflowing scroll content here...<br/>Line<br/>Line<br/>Line<br/>Line<br/>Line</p>
+    </section>
+
+    <section>
+      <h2>Z-Index Stack</h2>
+      <div class="z-stack">
+        <div class="z1">Z1</div>
+        <div class="z2">Z2</div>
+        <div class="z3">Z3</div>
+      </div>
+      <div class="modal">
+        <p>Modal popup using z-index</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="fixed-footer">Fixed Footer</footer>
+  <button class="scroll-top-btn">↑ Top</button>
+
+</body>
+</html>
