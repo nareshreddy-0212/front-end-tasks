@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model & Background Tasks</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    .section {
+      margin: 20px;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    /* Width & Height */
+    .fixed-box {
+      width: 300px;
+      height: 200px;
+      background: lightblue;
+    }
+    .inline-box {
+      display: inline-block;
+      width: 150px;
+      height: 100px;
+      background: salmon;
+      margin-right: 10px;
+    }
+    .percent-box {
+      width: 50%;
+      height: 100px;
+      background: lightgreen;
+    }
+    .minmax-box {
+      min-height: 100px;
+      max-height: 150px;
+      overflow: auto;
+      background: lavender;
+    }
+
+    /* Padding */
+    .padded {
+      padding: 20px;
+      background: peachpuff;
+    }
+    .custom-padding {
+      padding-top: 10px;
+      padding-right: 15px;
+      padding-bottom: 20px;
+      padding-left: 25px;
+      background: lemonchiffon;
+    }
+    .padded-para {
+      background: lightcoral;
+      padding: 15px;
+    }
+
+    /* Border */
+    .solid-border {
+      border: 2px solid black;
+    }
+    .dotted-warning {
+      border: 2px dotted red;
+    }
+    .mixed-border {
+      border-top: 3px solid blue;
+      border-left: 3px dashed green;
+      border-bottom: 3px double purple;
+    }
+
+    /* Margin */
+    .margin-bottom {
+      margin-bottom: 20px;
+    }
+    .center-box {
+      width: 300px;
+      margin: auto;
+      background: lightsteelblue;
+    }
+    .custom-margin {
+      margin-left: 30px;
+      margin-right: 60px;
+    }
+
+    /* Box-Sizing */
+    .content-box,
+    .border-box {
+      width: 200px;
+      padding: 20px;
+      border: 10px solid #666;
+      margin-bottom: 10px;
+    }
+    .content-box {
+      box-sizing: content-box;
+      background: #f9f9f9;
+    }
+    .border-box {
+      box-sizing: border-box;
+      background: #e0f7fa;
+    }
+
+    /* Box Shadow */
+    .simple-shadow {
+      box-shadow: 2px 2px 5px #888;
+    }
+    .raised-button {
+      padding: 10px 20px;
+      background: #4CAF50;
+      color: white;
+      border: none;
+      box-shadow: 2px 2px 6px gray;
+      cursor: pointer;
+    }
+    .inner-shadow {
+      box-shadow: inset 2px 2px 5px #999;
+    }
+    .glow-box {
+      box-shadow: 0 0 5px #f0f, 0 0 10px #f0f, 0 0 15px #f0f;
+    }
+
+    /* Background */
+    header, main, footer {
+      padding: 20px;
+      color: white;
+    }
+    header {
+      background-color: #333;
+    }
+    main {
+      background-color: rgba(0, 128, 255, 0.6);
+    }
+    footer {
+      background-color: #555;
+    }
+    .bg-image {
+      background-image: url('nat.jpeg');
+      height: 200px;
+      background-size: cover;
+      background-position: center;
+    }
+    .hero-section {
+      background-image: url('natu.jpeg');
+      height: 300px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      position: relative;
+    }
+    .bg-top-right {
+      background-image: url('ti.jpeg');
+      background-position: top right;
+      background-repeat: no-repeat;
+      height: 150px;
+    }
+    .center-bg {
+      background-image: url('ti.jpeg');
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100px;
+    }
+    .repeating-tile {
+      background-image: url('ti.jpeg');
+      background-repeat: repeat;
+      height: 150px;
+    }
+    .no-repeat-bg {
+      background-image: url('ti.jpeg');
+      background-repeat: no-repeat;
+      background-position: bottom right;
+      height: 150px;
+    }
+    .cover-bg {
+      background-image: url('ti.jpeg');
+      background-size: cover;
+      height: 300px;
+    }
+    .contain-bg {
+      background-image: url('ti.jpeg');
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 200px;
+      background-color: #eee;
+    }
+  </style>
+</head>
+<body>
+<h1>This is my Task-11 web page</h1>
+  <div class="section fixed-box">Fixed Box</div>
+  <div class="section">
+    <div class="inline-box">Box 1</div>
+    <div class="inline-box">Box 2</div>
+  </div>
+  <div class="section percent-box">50% Width Box</div>
+  <div class="section minmax-box">Lorem ipsum dolor sit amet... (dummy text)</div>
+
+  <div class="section padded">Padding: 20px</div>
+  <div class="section custom-padding">Custom Padding</div>
+  <div class="section"><p class="padded-para">Padded Paragraph Inside a Box</p></div>
+
+  <div class="section solid-border">Solid Border</div>
+  <div class="section dotted-warning">Dotted Warning Box</div>
+  <div class="section mixed-border">Mixed Border Styles</div>
+
+  <div class="section margin-bottom">Margin-Bottom Example</div>
+  <div class="section center-box">Centered with margin: auto</div>
+  <div class="section custom-margin">Custom Margin Box</div>
+
+  <div class="section content-box">Content-Box</div>
+  <div class="section border-box">Border-Box</div>
+
+  <div class="section simple-shadow">Simple Shadow</div>
+  <button class="raised-button">3D Button</button>
+  <div class="section inner-shadow">Inner Shadow</div>
+  <div class="section glow-box">Glowing Shadow Box</div>
+
+  <header>Header Section</header>
+  <main>Main Section with RGBA background</main>
+  <footer>Footer Section</footer>
+
+  <div class="section bg-image">Full Width Background</div>
+  <div class="hero-section">Hero with Background Image</div>
+
+  <div class="section bg-top-right">Top Right Image</div>
+  <div class="section center-bg">Center Image</div>
+  <div class="section repeating-tile">Tiled Background</div>
+  <div class="section no-repeat-bg">No Repeat Bottom Right</div>
+  <div class="cover-bg">Background Cover</div>
+  <div class="contain-bg">Background Contain</div>
+
+</body>
+</html>
